@@ -34,6 +34,7 @@ Instal·larem el servidor **OpenSSH** per a treballar de forma remota des del no
 Un cop hem acabat el procés d'instal·lació de la nostra maquina instal·larem el paquet git. 
 
 Ordre utilitzada: `apt install -y git`
+
 ![Imatge no es troba](/assets/images/instal%C2%B7lar_fog/captura_06.png)
 
 Seguidament clonarem el repositori anomenat **fogproject** del proyecto FOG en GitHub.
@@ -57,6 +58,7 @@ Parametres d'instal·lació *part1*:
 > - Deixarem que el DHCP gestione automaticament el DNS
 > - No utilitzarem el servidor FOG per al servei DHCP
 > - No instal·larem paquets adicionals
+
 ![Imatge no es troba](/assets/images/instal%C2%B7lar_fog/captura_09.png)
 
 Parametres d'instal·lació *part2*:
@@ -139,6 +141,7 @@ Configuració arxiu /etc/dnsmasq/ltsp.conf:
 ![Imatge no es troba](/assets/images/instal%C2%B7lar_fog/captura_22.png)
 
 Guardarem els canvis en l'arxiu anterior i reiniciarem el servei **dnsmasq**.
+
 ![Imatge no es troba](/assets/images/instal%C2%B7lar_fog/captura_23.png)
 
 
