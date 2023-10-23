@@ -1,3 +1,4 @@
+# PDF 1
 # SEGURETAT
 
 La seguretat informàtica és la disciplina encarregada de crear i aplicar normes, procediments i tècniques per garantir que un sistema d'informació sigui segur. Un sistema d'informació es considera protegit quan:
@@ -124,3 +125,111 @@ La gestió de riscos involucra equilibrar els costos de mesures de protecció am
    - Desplaçar la responsabilitat del risc a un tercer, com ara una companyia d'assegurances.
 
 Cada estratègia té els seus propis costos i beneficis, i pot ser utilitzada segons la naturalesa i magnitud del risc.
+
+# PDF 2
+# El Centre de Processament de Dades (CPD)
+
+## **Seguretat Física**
+   - Focalitzada en protegir el maquinari contra desastres naturals, incendis, furts, entre d'altres.
+   - Es tracta de protegir equips informàtics, cablejat i altres recursos materials.
+
+## **Ubicació del CPD**
+   - **Visibilitat:**
+     - Considerar terrenys propers, visibilitat de la companyia, i proximitat a altres empreses.
+   - **Factors Externs:**
+     - Legislació de protecció de dades, accessibilitat a energia, i taxes de criminalitat.
+   - **Accessibilitat:**
+     - Facilitat d'accés per carretera i proximitat a aeroports i estacions de tren.
+   - **Desastres Naturals:**
+     - Evaluar riscos com inundacions, terratrèmols i altres desastres.
+
+## **Emplaçaments Remots**
+   - Ubicacions estratègiques que consideren costos de refrigeració i seguretat.
+   - Algunes empreses busquen països amb protecció jurídica per a dades confidencials, com Islàndia.
+   - Exemples inclouen la construcció de CPDs en mines abandonades o llocs remots com l'estepa siberiana.
+
+El CPD és fonamental en l'estratègia de protecció de dades i operacions informàtiques d'una organització, requerint una planificació detallada per assegurar la seva seguretat i eficiència.
+
+# Condicions Ambientals del CPD
+
+## **1. Sistemes Ambientals:**
+   - Ajustament adequat dels sistemes elèctrics, temperatura, ventilació, aire condicionat i prevenció d'incendis.
+
+## **2. Construcció i Instal·lació:**
+   - Duran la fase de construcció, assegurar-se que les canonades d’aigua i gas tinguin vàlvules de seguretat per evitar propagacions en cas de fuites.
+
+## **3. Temperatura:**
+   - Mantenir un control estricte de la temperatura; idealment, al voltant dels 22 °C.
+   - Temperatures extremes poden causar danys irreparables als components electrònics.
+
+## **4. Humitat:**
+   - Mantenir la humitat relativa de l'aire entre el 40-50% per assegurar el funcionament òptim dels equips.
+   - Evitar nivells d'humitat alts que poden causar corrosió o nivells baixos que poden generar electricitat estàtica.
+
+## **5. Neteja i Manteniment:**
+   - Evitar acumulació de pols que pot generar electricitat estàtica i causar curtcircuits.
+   - Utilitzar aire comprimit per eliminar la pols acumulada en els equips.
+
+La regulació de les condicions ambientals és crucial per a la longevitat i el funcionament eficient dels equips en un CPD.
+
+## a. Sistemes Elèctrics
+
+### 1. Xarxa Elèctrica Externa i Interna
+
+- **Extern**: 
+   - Ocultar el cablejat visible o fàcil d'assolir en la façana de l'edifici per prevenir sabotatge. 
+   - Es necessitaran permisos de la companyia elèctrica per a fer modificacions.
+   
+- **Intern**: 
+   - Assegurar-se que la instal·lació té suficient potència contractada per a evitar tallades per excés de consum.
+   - Utilitzar elements homologats segons les normatives vigents.
+
+### 2. Protecció contra Descàrregues Elèctriques
+
+- Implementar preses de terra per protegir les persones de possibles descàrregues, encara que això pugui activar els magneto-tèrmics i els diferencials.
+
+### 3. Continuïtat del Servei
+
+- Utilitzar sistemes d'alimentació ininterrompuda i grups electrògens per assegurar la continuïtat del servei en cas de fallades en l'alimentació externa.
+
+### 4. Interferències Electromagnètiques
+
+- **Control de Cablejat**:
+   - Utilitzar cablejat aïllat de manera adequada per evitar interferències electromagnètiques mútues.
+  
+- **Fonts de Interferències**:
+   - Evitar la proximitat de cables amb motors i fluorescents, que són fonts comunes d'interferències electromagnètiques.
+
+## b. Sistemes de Climatització
+
+### 1. Requeriments Generals
+
+- Utilitzar sistemes d’aire condicionat de circuit tancat per mantenir la qualitat de l’aire.
+- Implementar sistemes de ventilació per evitar acumulació de pols i altres contaminants que puguin afectar els equips.
+
+### 2. Tipus de Sistemes de Climatització
+
+- **Ventilador**: Climatització bàsica amb ventiladors.
+- **Splits i Seqüenciador**: Utilitzar splits amb un seqüenciador que permet alternar l’ús dels splits basant-se en la temperatura.
+- **Refrigeració Líquida (Watercooling)**: Dissipar calor usant líquids, inclou variants com la refrigeració per immersió amb líquids dielèctrics.
+
+## c. Sistemes de Prevenció d’Incendis
+
+### 1. Disseny i Seguretat
+
+- Minimitzar materials combustibles en l’emmagatzematge i disseny de les instal·lacions.
+- Utilitzar murs i portes tallafocs per prevenir la propagació d’incendis.
+
+### 2. Detecció d’Incendis
+
+- **Manuals**: Activadors d’alarma accionats manualment.
+- **Automàtics**: Sensors que detecten foc o fum, inclou detectors òptics i de temperatura.
+
+### 3. Sistemes d'Extinció
+
+- **Manuals**: Com extintors i mànegues d’aigua.
+- **Automàtics**: Sistemes que usen aigua, gasos, o escumes per extingir el foc, considerant la compatibilitat amb la presència humana i el tipus de foc.
+
+### 4. Tipus de Foc
+
+- Identificar el tipus de foc per aplicar les mesures d'extinció adequades, com el tipus de substància utilitzada per extingir el foc.
