@@ -233,3 +233,46 @@ La regulació de les condicions ambientals és crucial per a la longevitat i el 
 ### 4. Tipus de Foc
 
 - Identificar el tipus de foc per aplicar les mesures d'extinció adequades, com el tipus de substància utilitzada per extingir el foc.
+
+# Més mesures de seguretat
+
+## 1. **Mesures dissuasives**
+   - Elements visibles per a possibles atacants que els faci canviar d'opinió.
+   - Exemples: alarmes, senyals d’alerta, guardes de seguretat, tanques, il·luminació nocturna.
+
+### Tanques com a mesura dissuasiva
+   - Funcionen com a barreres físiques i psicològiques.
+   - L'alçària i el material de la tanca influeixen en la seva eficàcia.
+
+## 2. **Dificultats d'accés a personal no autoritzat**
+   - Mesures per guanyar temps i aplicar contramesures en cas d'atac.
+   - Exemples: ús de cadenats, sistemes de protecció per capes.
+
+### Mecanismes complexos
+   - Estratègies que provenen del camp militar com ara el 'mantrap'.
+   - El 'mantrap' és un sistema amb dues portes que controla rigorosament l'accés.
+   - 
+## 3. **Detecció d’intrusos**
+   - S'utilitzen per detectar accessos no autoritzats i alertar el personal.
+   - Detecten canvis en l'ambient: lumínics, sonors, moviment, electromagnètics.
+   - Necessiten alimentació pròpia per evitar que un tall de llum els inutilitzi.
+
+### Sistemes d'alarma contra intrusos
+   - **Mòdul central**: el cervell del sistema.
+   - **Consola d'activació**: on s'activa o desactiva l'alarma.
+   - **Senyals**: es comuniquen amb la central d'alarmes.
+   - **Detectors**:
+     - Infrarojos: detecten radiació tèrmica.
+     - Microones: detecten variacions de senyals reflectits.
+     - Ultrasons: detecten trencaments de vidres.
+   - **Sistema de cablejat**: interconnecta els components.
+   - **Bateries autònomes**: asseguren el funcionament en cas de tall d'electricitat.
+   - **Contactes magnètics**: detecten obertures de portes o finestres.
+   - **Avisador telefònic**: comunica incidents via telèfon.
+   - **Polsadors**: permeten activar manualment l'alarma.
+   - **Alarma acústica**: emet un so en cas d'intrusió.
+
+## 4. **Avaluació d'incidències**
+   - Necessitat de gestionar falsos positius per evitar avisos innecessaris.
+   - Importància de disposar d'un protocol d'actuació davant d'alarma.
+   - La comunicació clara amb el personal és clau per gestionar incidències.
