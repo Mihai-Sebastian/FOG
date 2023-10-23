@@ -251,7 +251,7 @@ La regulació de les condicions ambientals és crucial per a la longevitat i el 
 ### Mecanismes complexos
    - Estratègies que provenen del camp militar com ara el 'mantrap'.
    - El 'mantrap' és un sistema amb dues portes que controla rigorosament l'accés.
-   - 
+     
 ## 3. **Detecció d’intrusos**
    - S'utilitzen per detectar accessos no autoritzats i alertar el personal.
    - Detecten canvis en l'ambient: lumínics, sonors, moviment, electromagnètics.
