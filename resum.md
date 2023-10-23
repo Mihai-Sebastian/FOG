@@ -17,3 +17,17 @@ Cal destacar que moltes vulnerabilitats en la seguretat provenen de factors huma
 - Negligència administrativa
 - Frau intern
 - Procediments de seguretat ineficaces
+
+# Mecanismes de Seguretat: Classificació
+
+Els mecanismes de seguretat es poden organitzar bàsicament de dues maneres, depenent del que es vulgui protegir i quan actua la protecció.
+
+## Segons el que es vol protegir:
+
+- **Física**: Protegeix elements físics, com hardware o instal·lacions.
+- **Lògica**: Protegeix elements intangibles com dades, aplicacions i sistemes operatius.
+
+## Segons el moment en què actua la protecció:
+
+- **Activa**: Mecanismes que actuen **abans** que ocorri un problema, prevenint danys al sistema.
+- **Passiva**: Mecanismes que actuen **després** d’un incident, ajudant a minimitzar els efectes i facilitant la recuperació del sistema.
