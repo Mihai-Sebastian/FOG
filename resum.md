@@ -714,3 +714,661 @@ Per assegurar que els registres siguin útils en la detecció i resposta davant 
 
 Implementant aquestes estratègies de protecció, es pot mantenir la confiabilitat dels registres com a font fiable d'informació per a l'anàlisi forense i la resposta davant incidents de seguretat.
 
+# PDF 4
+# Criptografia
+
+## Definicions Bàsiques
+- **Xifra o Criptosistema**: Mètode secret d’escriptura que transforma un text en clar a un text xifrat.
+- **Criptografia**: Ciència i estudi de l’escriptura secreta.
+- **Criptologia**: Inclou la criptografia i la criptoanàlisi.
+
+## Divisions
+- **Criptografia**: Disseny de xifres.
+- **Criptoanàlisi**: Trencament de xifres.
+
+## Tipus de Xifres
+- **Xifra de Transposició**: Canvia l’ordre dels caràcters.
+- **Xifra de Substitució**: Substitueix caràcters per altres.
+
+## Resistència de les Xifres
+- **Xifres Febles**: Fàcils de trencar.
+- **Xifres Fortes**: Computacionalment segures i difícils de trencar.
+- 
+# Introducció a la Criptografia
+
+## Objectius de la Criptografia
+- La criptografia assegura:
+  - **Confidencialitat**: Protegeix les dades.
+  - **Integritat o Autenticitat**: Asegura que les dades no són alterades.
+  - **Autenticació**: Verifica el emissor o receptor.
+  - **No Repudi**: Verificació de l'origen de les dades (signatura digital).
+
+## Funcions de la Criptografia
+- Protegeix dades:
+  1. Enviades per un mitjà de comunicació.
+  2. Guardades en un sistema informàtic.
+- Protecció en dues vessants:
+  1. **Secret o Privadesa**: Preserva la confidencialitat.
+  2. **Integritat o Autenticitat**: Impedeix la modificació no autoritzada.
+
+## Atacs als Sistemes de Comunicació
+1. **Atacs contra la Confidencialitat (Escolta Passiva)**:
+   - Interceptar text xifrat per deduir clau o text en clar.
+2. **Atacs contra la Integritat (Escolta Activa)**:
+   - Modificar dades durant la transmissió.
+
+## Atacs a Sistemes Informàtics
+1. **Atacs contra la Confidencialitat**:
+   - L’escombratge de memòria: Cerca d'informació confidencial en memòria o disc.
+2. **Atacs contra l'Autenticitat/Integritat**:
+   - Falsificació: Modificar, inserir o esborrar dades.
+   - Destrucció Accidental: Esborrament o sobre-escriptura no desitjada.
+
+## Defenses
+- Les tècniques criptogràfiques protegeixen contra atacs en sistemes de comunicació.
+- Per protegir sistemes informàtics, és necessari complementar amb **controls d'accés**.
+
+# Evolució de la Criptografia
+
+## Pre-científica: Antiguitat – 1949
+- Utilització de:
+  - **Xifres de Substitució**: Exemple, xifra del Cèsar.
+  - **Xifres de Transposició**: Exemple, Escítala Lacedemónia.
+
+## Científica: 1949 - 1976
+- Era influenciada per les teories de Shannon.
+
+## Asimètrica: 1976 - Actualitat
+- Inici amb algoritmes com Diffie-Hellman.
+- Continua evolucionant fins a l'actualitat.
+
+# Propietats per a un Bon Algoritme de Xifrat
+
+## Confusió
+- Objectiu: **Confondre l'atacant**.
+- Prevenir que l'atacant estableixi una relació entre el criptograma i la clau.
+- Mètode: 
+  - Aplicar **operacions de substitució** a caràcters, bytes o blocs.
+
+## Difusió
+- Objectiu: **Difondre les característiques del text en clar** a tot el criptograma.
+- Ocultar la relació entre el text en clar i el text xifrat.
+- Mètode:
+  - Aplicar **operacions de transposició o permutació** a caràcters, bytes o blocs.
+
+# Principi de Kerckhoffs
+
+- **Transparència dels Algorismes**:
+  - Algorismes de xifrat i desxifrat han de ser públics.
+  - L'únic element secret ha de ser la clau.
+
+- **Concepció Errònia**:
+  - Podria semblar que mantenir secret l'algoritme augmenta la seguretat, però no és així.
+
+- **Avantatges de l'Obertura**:
+  - Un mecanisme públic pot ser revisat per tota la comunitat científica, augmentant la seva fiabilitat.
+
+- **Dificultat de Mantenir el Secret**:
+  - Mantenir un mecanisme de xifratge secret és complicat a llarg termini, malgrat les mesures de confidencialitat aplicades.
+
+# Atac de Força Bruta (o Recerca Exhaustiva de Claus)
+
+- **Definició**: Provar totes les possibles combinacions de clau, una a una.
+- **Design Bò**: Un algorisme és ben dissenyat si l'atac més senzill és la recerca exhaustiva de claus.
+- **Mida de l'Espai de Claus**:
+  - Per a clau de n bits, el total de claus possibles és \(2^n\).
+  - En mitjana, caldrà provar la meitat de les claus per trobar la correcta.
+- **Longitud de Clau Recomanada**:
+  - Per prevenir aquests atacs, es recomana una longitud mínima de clau de 128 bits.
+
+# Tipus de Criptografia
+
+## Simètrica
+- Utilitza **una única clau** per xifrar i desxifrar el missatge.
+
+## Asimètrica
+- Basada en **dues claus**:
+  - **Clau Pública**: Pot ser compartida amb qualsevol que necessiti enviar un missatge xifrat.
+  - **Clau Privada**: Mai s'ha de compartir o revelar.
+
+## Híbrida
+- Combina les **avantatges** de la criptografia simètrica i asimètrica.
+
+# Xifra de Clau Simètrica
+
+- **Clau única**: 
+  - Utilitza la mateixa clau per xifrar i desxifrar el missatge.
+  - Tant l'emissor com el receptor utilitzen la mateixa clau.
+
+- **Seguretat**:
+  - Depèn de mantenir la clau en secret.
+
+- **Algorismes Populars**:
+  - AES
+  - 3DES
+
+- **Tipus de Xifrat en Criptografia Simètrica**:
+  - Xifrat per bloc.
+  - Xifrat per flux.
+
+# Xifrat en Bloc VS Xifrat en Flux
+
+- **Velocitat**:
+  - Ambdós són ràpids i aptes per xifrar grans volums de dades.
+  - El xifrat en flux és encara més ràpid.
+
+- **Xifrat en Flux**:
+  - Pot xifrar dades en ràfegues sense necessitat de blocs complets.
+  - Mai s'ha de reutilitzar la mateixa clau per xifrar dos textos diferents.
+
+- **Longitud de la Clau**:
+  - Varia entre 32 i 256 bits.
+
+- **Problema Comú**:
+  - Distribució de la clau: Necessitat d'acordar una clau secreta entre emissor i receptor.
+
+# Problema de l'Intercanvi de Claus
+
+- **Problema**:
+  - Compartir una clau secreta entre un emissor i un receptor utilitzant un canal insegur (ex. xarxa de comunicacions).
+
+- **Solució**:
+  - Utilització de la **criptografia asimètrica** o de clau pública.
+
+# Xifra de Clau Pública
+
+- **Generació de Claus**:
+  - Cada usuari crea un parell de claus: una clau privada i una clau pública.
+  
+- **Seguretat**:
+  - Basada en la dificultat computacional de descobrir la clau privada a partir de la clau pública.
+  
+- **Velocitat**:
+  - Utilitzar únicament xifratge asimètric pot fer que el procés de comunicació sigui lent.
+  
+- **Usos Principals**:
+  - Intercanvi de claus simètriques.
+  - Signatura Digital (Per a No repudi i Autenticació).
+
+# PKI (Public Key Infrastructure)
+
+- **Problema de Confiança**:
+  - Confiança en les claus públiques.
+  
+- **Amenaces**:
+  - Atac "man in the middle".
+  
+- **La Solució - PKI (Public Key Infrastructure)**:
+  - Distribueix claus públiques de manera fiable.
+  - **Autoritats Certificadores (CA – Certified Authority)**:
+    - Emeten Certificats Digitals X.509.
+  - Estableix un sistema de confiança jeràrquic.
+
+# Objectius de la Seguretat
+
+- **Criptografia**:
+  - Assegura la majoria dels objectius que es fixa la seguretat informàtica.
+
+- **Criptografia Simètrica**:
+  - **Assegura**:
+    - Confidencialitat
+
+- **Criptografia Asimètrica**:
+  - **Assegura**:
+    - Autenticació
+    - No-repudi
+  
+- **Funcions de HASH**:
+  - **Asseguren**:
+    - Integritat?
+
+# Funcions de Resum (Hash)
+
+Les funcions de hash són eines criptogràfiques que permeten generar un valor únic i fix, anomenat hash, a partir d’un conjunt de dades d'entrada de mida variable. Aquestes funcions tenen diverses aplicacions en seguretat informàtica:
+
+## Aplicacions:
+
+- **Signatures Digitals**:
+  - S’utilitzen per millorar l'eficiència de les signatures digitals. 
+  - A causa que les signatures digitals utilitzant criptografia asimètrica poden ser lentes, es prefereix signar un resum (hash) del missatge en lloc del missatge complet.
+  
+- **Autenticació**:
+  - S’utilitzen per verificar que les dades no han estat alterades durant la seva transmissió a través de la xarxa.
+  - Això ajuda a assegurar la integritat de la informació transmesa, com es veu amb el concepte dels codis HMAC (Hash-based Message Authentication Code).
+
+## Algorismes Populars:
+
+- **MD5**:
+  - Un algorisme hash ampliament utilitzat, però que actualment es considera vulnerables a col·lisions hash (dos inputs diferents produint el mateix hash).
+
+- **SHA**:
+  - Família d'algorismes hash que inclou diferents versions com SHA-1, SHA-256 i SHA-3.
+  - Es consideren més segurs que MD5 i s’utilitzen àmpliament en aplicacions de seguretat.
+
+# Aplicacions de la Criptografia
+
+## Seguretat de les Comunicacions
+
+### En una xarxa de paquets commutats com IP
+
+- **SSL (Secure Sockets Layer)**: 
+  - Utilitzat principalment en comunicacions web per a assegurar la transferència d’informació entre el servidor i el client.
+
+- **PGP (Pretty Good Privacy)**:
+  - S’utilitza en correu electrònic i altres arxius per xifrar textos, correus electrònics i arxius.
+
+- **S/MIME (Secure/Multipurpose Internet Mail Extensions)**:
+  - S’utilitza per xifrar i signar digitalment correus electrònics.
+
+- **VPN (Virtual Private Network)**:
+  - Permet una xarxa privada segura sobre xarxes de transmissió públiques com Internet.
+
+- **SSH (Secure Shell)**:
+  - Un protocol que assegura les connexions remotes entre sistemes.
+
+- **Telefonia Mòbil**:
+  - Protegeix la confidencialitat i integritat de les comunicacions de veu i dades.
+
+- **Televisió de Pagament**:
+  - Assegura que només els subscriptors de pagament puguin accedir als continguts.
+
+## Votacions i Contractes Electrònics
+
+- **E-voting**:
+  - Assegura que els vots siguin anònims i inalterables una vegada s’han emès.
+
+- **E-contracts**:
+  - Garanteix que els contractes digitals siguin segurs i autèntics.
+
+## Comerç Electrònic: Diners Electrònics
+
+- **Transaccions Segures**:
+  - Assegura les transaccions financeres en línia mitjançant diverses tecnologies criptogràfiques.
+
+- **E-wallets**:
+  - Permet guardar, enviar i rebre diners electrònicament de manera segura.
+
+# PGP (Pretty Good Privacy)
+
+## Sobre Digital
+- **Estructura**:
+  - Missatge xifrat amb una clau simètrica generada aleatòriament (clau de sessió).
+  - Diverses còpies de la clau de sessió, cada una xifrada amb la clau pública dels destinataris.
+
+## Combinació de Criptografies
+- Utilitza tant criptografia **simètrica** com **asimètrica**.
+  - **Simètrica**: Per xifrar el missatge real.
+  - **Asimètrica**: Per xifrar la clau de sessió.
+
+## Confidencialitat i Integritat
+- Garanteix que el missatge estigui protegit i no modificat durant la transmissió.
+
+## Web of Trust
+- Alternativa a PKI (Infraestructura de Clau Pública).
+  - **Descentralitzada**: Sense una autoritat central, basada en una xarxa de confiança entre usuaris.
+  - **Validació de Clau Pública**: Asegura que una clau pública pertany realment al seu propietari.
+  - **Confiança Transitiva**: La confiança es pot estendre a través d’una cadena d’usuaris (els amics dels meus amics).
+
+# PDF 07
+# Legislació i Normes sobre Seguretat i Protecció de Dades
+
+## 1. **Concepte Bàsic**
+   - Existeixen conjunts de normes jurídiques que regulen les conductes delictives i les sancions associades, que poden incloure penes de privació de llibertat.
+
+## 2. **Codi Penal**
+   - El conjunt de lleis aplicables en matèria penal s’anomena Codi Penal.
+
+## 3. **Variabilitat Geogràfica**
+   - Les normes i lleis varien d’un país a un altre, tenint cada un les seves pròpies regulacions.
+
+## 4. **Importància de la Normativa Tecnològica**
+   - És crucial comprendre les lleis que afecten l’ús de tecnologies, ja que influencien la manera en què les utilitzem, tant per a professionals tècnics com per a usuaris domèstics.
+
+# Legislació i Normes sobre Seguretat i Protecció de Dades
+
+## **Descripció General**
+   - Existència de normes jurídiques específiques que regulen les conductes que són considerades delictives i establixen les sancions pertinents, podent arribar a ser privatives de llibertat.
+
+## **Codi Penal**
+   - Conjunt de lleis que es refereixen específicament a delictes i sancions, denominat com a Codi Penal.
+
+## **Variabilitat entre Països**
+   - Les lleis i normes són específiques de cada país i, per tant, poden variar significativament entre diferents regions o estats.
+
+## **Relevància de la Normativa en Tecnologia**
+   - Essencial tenir coneixement de les lleis que regulen l'ús de la tecnologia, ja que afecten la manera en què es utilitza la tecnologia, tant des de la perspectiva dels professionals tècnics com dels usuaris generals o domèstics.
+
+# El Codi Penal i les Conductes Il·lícites Vinculades a la Informàtica
+
+## **Protecció de Drets Fonamentals i Llibertats Públiques**
+   - El Codi Penal protegeix severament els drets fonamentals i llibertats públiques, tal com estan establerts en el títol I de la Constitució.
+
+## **Dret a la Intimitat: Article 18 CE**
+   - Aquest article està estretament relacionat amb la pràctica informàtica.
+   - Reconèix el dret a la intimitat, protegint no només la vida privada de l'individu, sinó també l’esfera familiar i el domicili.
+   - Detalls de l’Article 18 CE:
+     - Garanteix el dret a l’honor, la intimitat personal i familiar, i la pròpia imatge.
+     - Estableix que el domicili és inviolable, protegit contra entrades i escorcolls sense consentiment o resolució judicial.
+     - Garanteix el secret de les comunicacions, inclòs correu, telegrama i telefonades, excepte amb una resolució judicial.
+     - Limita l'ús de la informàtica per garantir l’honor i la intimitat dels ciutadans, i el ple exercici dels seus drets.
+
+## **Rellevància en la Pràctica Informàtica**
+   - La llei busca protegir l'intimitat dels individus en l'ús de la tecnologia i la informàtica, garantint que els drets i llibertats dels ciutadans siguin respectats i protegits.
+
+# Delictes contra la Intimitat en l'Àmbit de la Informàtica
+
+## **Article 197.1 del Codi Penal: Delictes contra la Intimitat**
+   - Enfocat en delictes realitzats mitjançant la informàtica que violen la intimitat de les persones.
+   - Inclou apoderar-se de documents personals, interceptar telecomunicacions, o usar dispositius per escoltar, transmetre, gravar o reproduir comunicacions sense consentiment.
+
+## **Conductes Constitutives de Delicte**
+   - Per ser considerat un delicte, ha de ser sense consentiment de la persona afectada o sense autorització judicial.
+   - Les accions han de tenir la intenció de descobrir secrets o vulnerar la intimitat de l’individu.
+
+## **Protecció en l'Àmbit Empresarial**
+   - Els correus electrònics dels treballadors tenen la mateixa protecció legal que els correus personals, malgrat estiguin utilitzant recursos de l'empresa.
+   - En cas de necessitat de demostrar l'ús indegut de mitjans electrònics en una organització, es recomana utilitzar mètodes que siguin el menys invasius possible.
+
+## **Recomanacions per a Tècnics**
+   - En realitzar investigacions o controls, s'ha de procurar utilitzar mètodes que minimitzin el dany o la intrusió en la privacitat i la protecció de les dades personals.
+
+# Usurpació i Cessió de Dades Reservades de Caràcter Personal
+
+## **Tipificació Legal: Articles 197, 198, 199 i 200 del CP**
+   - Definides com a delictes: accés, utilització, modificació, revelació, difusió o cessió de dades personals reservades sense autorització.
+
+## **Emmagatzematge i Declaració de Dades Personals**
+   - Les dades han de ser gestionades segons la Llei Orgànica de Protecció de Dades Personals (LOPDP).
+
+## **Consideracions Especials: Article 199.2**
+   - Castiga professionals que incompleixin l’obligació de reserva, divulgant secrets d’altri.
+
+## **Responsabilitats Penals**
+   - Més enllà de les repercussions obvies, pot haver-hi responsabilitats penals associades a aquestes accions.
+
+## **Recomanacions per a Tècnics i Usuaris**
+   - Es probable que tinguin accés a dades personals i han de mantenir la confidencialitat, abstenint-se de compartir-les sense autorització.
+
+## **Resum**
+   - L'accés o compartició no autoritzada de dades personals està legalment penalitzada.
+   - Les dades han de ser manejades d’acord amb les lleis de protecció de dades.
+   - Professionals han de mantenir un nivell alt de confidencialitat, evitant compartir informació sensible.
+
+# Delictes Informàtics: Tipus i Consideracions
+
+## **1. Delicte de Frau Informàtic (Article 248.2 CP)**
+   - **Manipulació Informàtica per Transferència No Consentida**
+     - Castigat si s'aconsegueix transferència no consentida de béns amb ànim de lucre.
+     - Exemple: pharming i phishing.
+   - **Conductes Preparatories**
+     - Inclou fabricació, facilitació o possessió de programari específic per a cometre frau.
+   - **Duplicació o Clonació de Targetes**
+     - Pot ser considerat com a falsificació de moneda.
+
+## **2. Delicte d'Ús Abusiu d'Equipaments (Article 256 CP)**
+   - **Ús no Autoritzat de Telecomunicacions**
+     - Castigat si el perjudici és superior a 400 euros.
+     - Exemple: ús no autoritzat de Wi-Fi.
+
+## **3. Delicte de Danys (Article 264 CP)**
+   - **Dany a Dades o Programari**
+     - Inclou destrucció, alteració o inutilització de dades o programari.
+   - **Valoració dels Danys**
+     - Necessari aportar una valoració dels danys en la denúncia.
+   - **Exemple**
+     - Alteració no autoritzada d’una pàgina web.
+   - **Consideracions Addicionals**
+     - Algunes intrusions podrien no ser considerades delictes per si mateixes però podrien estar vinculades a altres conductes delictives.
+
+## **Resum**
+   - Diversos tipus de delictes informàtics són explícitament castigats per la llei.
+   - Les accions que impliquen frau, ús abusiu d’equipaments i danys a la propietat digital estan específicament tipificades i sancionades.
+
+# Delictes contra la Propietat Intel·lectual: Detalls i Exemples
+
+## **Definició i Marc Legal**
+   - **Relacionats amb:**
+     - Descàrrega de fitxers protegits.
+     - Ús de programaris d'intercanvi de fitxers (P2P).
+   - **Marc Legal:**
+     - Article 270 del Codi Penal (CP).
+     - Llei de Propietat Intel·lectual (no penal).
+
+## **Conductes Delictives (Article 270 CP)**
+   - **Reproduir, plagiar, distribuir o comunicar públicament:**
+     - Obres sense autorització del titular.
+   - **Requisits per ser Delicte:**
+     - Ànim de lucre.
+     - Perjudici a tercers.
+
+## **Exemples de Delictes**
+   - **Reproducció i Venda No Autoritzada:**
+     - De programari al marge dels drets de llicència.
+   - **Instal·lació de Còpies No Autoritzades:**
+     - En ordinadors en el moment de compra.
+   - **Publicació No Autoritzada:**
+     - De codi font, programari, MP3, llibres, etc.
+   - **Ús Incorrecte de Llicències:**
+     - Ús d’una llicència individual per a múltiples usuaris.
+   - **Trencament de Mecanismes de Protecció (Cracking):**
+     - Anul·lació de dispositius tècnics de protecció.
+
+## **Penes Associades**
+   - Penes previstes per facilitar mitjans per anul·lar dispositius de protecció.
+
+## **Resum**
+   - Els delictes contra la propietat intel·lectual involucren accions no autoritzades relacionades amb obres protegides, realitzades amb ànim de lucre i que causen perjudici a tercers.
+
+# Dret de Còpia Privada: Conceptes Clau
+
+## **1. Permissibilitat de Còpia Privada**
+   - **Obres Permitides:**
+     - Literàries, artístiques, científiques (amb accés legal previ).
+   - **Condicions:**
+     - Uso personal i privat.
+     - Sense finalitats lucratives, col·lectives o perjudicar tercers.
+     - Limitat a una sola còpia.
+
+## **2. Exclusions Importants**
+   - **Programari i Videojocs:**
+     - No es permet el dret de còpia privada.
+
+## **3. Cànon Compensatori**
+   - **Aplicació:**
+     - Taxa sobre mitjans de gravació.
+   - **Beneficiaris:**
+     - Autors, editors, productors, artistes.
+   - **Objectiu:**
+     - Compensar còpies privades d'obres.
+
+## **4. Llicència de Programari**
+   - **Definició:**
+     - Contracte entre autor/titular i usuari.
+   - **Detalls Importants:**
+     - Adquisició de drets d'ús, no de propietat del programari.
+     - Sotmès a condicions específiques de la llicència.
+
+## **Resum**
+   - El dret de còpia privada permet la reproducció limitada d'obres específiques per a ús personal, amb certes exclusions i compensacions per a creadors a través d'un cànon compensatori. Les llicències de programari defineixen les condicions sota les quals es pot utilitzar el software.
+
+# Tipus de Llicències de Programari No Lliure: Conceptes Clau
+
+## **1. OEM (Original Equipment Manufacturer)**
+   - **Aplicabilitat:**
+     - Majoritàriament sistemes operatius, també aplicable a maquinari.
+   - **Condicions:**
+     - Venda amb equip informàtic nou (preinstal·lat).
+     - No es pot vendre aïlladament del maquinari.
+
+## **2. Retail (Detall)**
+   - **Presentació:**
+     - Versions comercials normalitzades, disponibles a botigues físiques.
+   - **Flexibilitat:**
+     - Venda independent del maquinari.
+     - Pot incloure funcionalitats addicionals comparat amb versions OEM.
+
+## **3. Llicències per Volum**
+   - **Destinataris:**
+     - Empreses, institucions educatives (instituts, universitats).
+   - **Característiques:**
+     - Similars a OEM, però no lligades a compra de maquinari nou.
+     - Facilita instal·lació de software en múltiples dispositius dins d'una organització.
+
+## **Resum**
+   - Cada tipus de llicència s'adapta a diferents necessitats i contexts, des de la venda conjunta amb hardware (OEM), passant per versions comercials amb més flexibilitat (Retail), fins a llicències que faciliten la distribució a gran escala dins d'organitzacions (Llicències per Volum).
+
+
+# Tipus de Llicències de Programari Lliure: Conceptes Clau
+
+## **1. **GPL (Llicència Pública General de GNU)**
+   - **Autoria:**
+     - Conserva drets d’autor (copyright).
+   - **Redistribució:**
+     - Permet redistribució i modificació.
+     - Versions modificades han de mantenir-se sota termes restrictius de la GPL.
+
+## **2. **BSD (Berkeley Software Distribution)**
+   - **Origens:**
+     - Relacionada amb el sistema operatiu derivat de Unix.
+   - **Flexibilitat:**
+     - Llicències sense restriccions, compatibles amb GNU GPL.
+     - Permet redistribuir com a programari no lliure.
+
+## **3. **MPL (Mozilla Public License)**
+   - **Característiques:**
+     - Producte final no necessàriament ha de ser MPL.
+     - Promou col·laboració entre autors per generació de programari lliure.
+     - Més restrictives comparades amb BSD.
+
+## **4. **Copyleft**
+   - **Drets:**
+     - Dret de còpia, modificació i redistribució.
+   - **Revocació:**
+     - Possible retirar llicència, però sense efectes retroactius.
+
+## **Resum**
+   - **Llibertats Fonamentals:**
+     - Uso, estudi, modificació i redistribució del programari.
+   - **Variedad de llicències:**
+     - Diferents llicències oferixen variats graus de llibertat i restricció, adaptant-se a diferents necessitats i filosofies de distribució i modificació del programari.
+
+# Delicte de Revelació de Secrets d’Empresa
+
+## 1. **Definició Legal**
+   - **Referència Legal:** Article 278.1 del Codi Penal (CP)
+   - **Descripció:** El delicte es caracteritza per la interceptació o l'ús d'artificis tècnics per descobrir un secret d'empresa sense consentiment. Es considera una violació de la confidencialitat i la privacitat de l'informació empresarial.
+
+## 2. **Exemples i Aplicacions**
+   - **Espionatge Industrial:** L'ús de mètodes no ètics per obtenir informació confidencial d'una altra empresa.
+
+## 3. **Consequències Legals**
+   - **Penes:** Poden incloure multes o penes de presó, depenent de la gravetat i l'impacte de la revelació del secret.
+
+## 4. **Protecció Legal**
+   - **Mesures Preventives:** Les empreses poden implementar mesures de seguretat, com ara encriptació i controls d'accés, per protegir-se contra la revelació de secrets.
+
+## Delicte de Defraudació dels Interessos Econòmics dels Prestadors de Serveis
+
+### 1. **Origins i Referències Legals**
+   - Introduït per la reforma 15/2003 del Codi Penal.
+   - Referència Legal: Article 286 del Codi Penal (CP).
+
+### 2. **Descripció del Delicte**
+   - **Acció Delictiva:** Facilitar a tercers l'accés a serveis interactius o audiovisuals (ex. televisions de pagament) sense autorització dels prestadors de serveis.
+   - **Exemples:** 
+      - Publicar mètodes per evitar o "saltar" els mecanismes de protecció en una pàgina web.
+      
+### 3. **Aspectes Legals**
+   - **Consideracions:** La mera explicació o divulgació de mètodes per comprometre la seguretat dels serveis ja és considerada una activitat delictiva.
+   
+### 4. **Consequències**
+   - **Penes:** Sotmetit a penes que poden variar depenent de la gravetat de l'acció i l'impacte en els prestadors de serveis.
+
+## Altres Delictes i la Investigació dels Delictes Informàtics
+
+### 1. **Ampli Rang de Delictes**
+   - Molts delictes poden ser perpetrats utilitzant la tecnologia, on aquesta actua com el mitjà per cometre el delicte, i els delictes estan ja ben definits en el context del món "real".
+
+### 2. **Exemples de Delictes**
+   - Amenaces i coaccions via xats o correus electrònics.
+   - Falsedat documental, inclou alteracions i simulacions de documents públics o privats.
+   - Difusió de pornografia infantil a Internet (tenir-ne també és un delicte).
+
+### 3. **Fonts d'Informació per a la Investigació**
+   - **Fitxers o Registres (Logs) Locals:**
+     - Els sistemes operatius i els programaris registran activitats en fitxers de registre locals.
+   - **Registres (Logs) dels Proveïdors de Servei d'Internet (PSI):**
+     - Dades associades a connexions són emmagatzemades pels PSI.
+     - Les dades poden ser cedides als investigadors només amb una ordre judicial, segons la Llei de serveis de la societat de la informació i del comerç electrònic (LSSICE).
+
+## Protocol d’Actuació Davant d’un Delicte Informàtic
+
+### 1. **Per a Administradors de Sistema:**
+   - **Adjuntar fitxers de registre:**
+     - Incloure detalls com la IP de l'atacant i les accions realitzades en el sistema.
+   - **Valoració dels danys:**
+     - Si s'han produït danys, cal adjuntar una valoració d’aquests.
+   - **Actuar amb Rapidesa:**
+     - Els proveïdors no conserven els fitxers de registre indefinidament.
+   - **Informació de correus electrònics:**
+     - Si el delicte involucra correus electrònics, incloure les capçaleres completes.
+   - **Duplicació del disc dur:**
+     - Considerar duplicar (o clonar) el disc dur per preservar proves i evitar futurs delictes.
+
+### 2. **Per a Usuaris Domèstics:**
+   - **Emmagatzematge de Registres:**
+     - Algunes aplicacions poden generar i emmagatzemar els seus propis logs, com les converses de xat o les capçaleres de correus electrònics.
+   - **Adjuntar Informació Pertinent:**
+     - En cas de denúncia, assegurar-se d'incloure tots els registres i informacions rellevants disponibles.
+
+# PDF 08
+# Resum de Legislació sobre Protecció de Dades
+
+- La **consciència sobre la protecció de dades** està creixent entre les persones, que cada dia estan més preocupades per la seguretat de la seva informació personal.
+
+- Els **factors clau** que contribueixen a aquesta situació inclouen:
+  - La existència de normatives específiques de protecció de dades.
+  - L’activitat incrementada de l'Agència Espanyola de Protecció de Dades, un organisme encarregat de vetllar pel compliment de la legislació.
+
+- La **Llei Orgànica 15/1999 (LOPDP)** és una de les lleis més crucials que busquen protegir la intimitat de les persones, assegurant que les dades personals siguin tractades amb respecte i garantint els drets fonamentals relacionats amb l’honor, la intimitat i la privacitat de les persones físiques.
+
+## Definicions Clau de Protecció de Dades
+
+- **Dada de Caràcter Personal:**
+  - Segons la LOPDP, es refereix a qualsevol informació relacionada amb persones físiques que sigui identificable. ([Vídeo explicatiu](https://www.youtube.com/watch?v=lRozhQS6kN8))
+
+- **Fitxer Automatitzat:**
+  - D’acord amb la LOPDP, un fitxer és un conjunt organitzat de dades personals, independentment de com estigui creat, emmagatzemat o organitzat.
+  - Pot variar en format, des de CD-ROMs i disquets fins a quaderns. Si les dades són processades automàticament, es considera un fitxer automatitzat.
+
+## La LOPD (Llei Orgànica de Protecció de Dades)
+
+- **Origen:**
+  - Prové de l’article 18.4 de la Constitució Espanyola i de la Directiva europea 94/46. Aquesta directiva busca protegir les dades personals i assegurar la seva lliure circulació dins de la Unió Europea (UE).
+
+- **Aplicabilitat:**
+  - Afecta informació de persones físiques identificables en qualsevol suport físic que permeti el seu tractament manual o automatitzat.
+  - Aplicable a organitzacions que gestionen fitxers amb dades personals, obligant-les a complir certes obligacions legals.
+
+- **Objectiu de la LOPD:**
+  - Garantir i protegir la privadesa i intimitat de les persones físiques.
+
+- **Desenvolupament Reglamentari (Reglament 1720/2007):**
+  - Desenvolupa la LOPD, establint mesures de seguretat tècniques i organitzatives necessàries per protegir les dades personals.
+  - Les mesures s’apliquen a diversos àmbits com sistemes informàtics, arxius, personal i procediments operatius.
+
+- **Definició de Tractament:**
+  - Inclou operacions i procediments tècnics, automatitzats o no, com recollida, gravació, conservació, elaboració, modificació, bloqueig i cancel·lació de dades.
+
+## El Responsable dels Fitxers i el Responsable de la Seguretat
+
+- **Responsable dels Fitxers:**
+  - Pot estar format per dues figures diferents:
+    - **Responsable del Fitxer o Tractament:** Podria ser una entitat o empresa, com ara l’empresa Editorial Nova, que decideix com es tractaran les dades.
+    - **Encarregat del Tractament:** Com una empresa externa, Gestions Informàtiques, contractada per realitzar el tractament de les dades en nom del responsable.
+
+- **Responsable de la Seguretat dels Fitxers:**
+  - És la persona o grup de persones assignades pel responsable del fitxer.
+  - Tenen la responsabilitat de coordinar i supervisar les mesures de seguretat que s’apliquen als fitxers de dades personals.
+
+
