@@ -1371,4 +1371,249 @@ Les funcions de hash són eines criptogràfiques que permeten generar un valor �
   - És la persona o grup de persones assignades pel responsable del fitxer.
   - Tenen la responsabilitat de coordinar i supervisar les mesures de seguretat que s’apliquen als fitxers de dades personals.
 
+## Principis Bàsics de la LOPD
+
+- **Principi de Qualitat de les Dades:**
+  - Les dades recollides i tractades han de ser adequades, pertinents i no excessives per la finalitat amb la qual s’han obtingut.
+
+- **Finalitat Expressa:**
+  - Les dades han de ser utilitzades únicament per la finalitat per la qual van ser recollides.
+
+- **Actualitat de les Dades:**
+  - Les dades han de ser actuals i reflectir la situació presente de l’individu.
+
+- **Principi d’Exactitud:**
+  - Les dades han de ser correctes i modificables en cas de canvi.
+
+- **Deure d’Informació a la Persona Afectada:**
+  - La persona ha de ser informada de manera clara sobre com seran utilitzades les seves dades, la finalitat de la recollida, i els seus drets (drets ARCO: Accés, Rectificació, Cancel·lació, Oposició).
+
+- **Necessitat de Consentiment de la Persona Afectada:**
+  - Generalment, es requereix el consentiment de la persona per tractar les seves dades, llevat que la llei establisca el contrari.
+
+- **Excepcions del Consentiment:**
+  - Hi ha excepcions com la prevenció o diagnòstic mèdic, assistència sanitària, o gestió de serveis sanitaris, sempre mantenint el deure de secret professional.
+
+# PDF 09
+# LSSICE (Llei 34/2002, de serveis de la societat de la informació i del comerç electrònic)
+
+## Objectiu
+Incorporar la directiva comunitària sobre el comerç electrònic al marc jurídic espanyol, adaptant-se així a la digitalització de diverses activitats com el comerç, transaccions bancàries, lloguers, etc.
+
+## Necessitat
+- **Adaptació al món virtual**: El trasllat de moltes activitats reals al món virtual crea buits legals que necessiten ser coberts.
+- **Generar Confiança**: Establir un marc jurídic clar per generar un entorn de confiança, definint responsabilitats i deures en el comerç electrònic.
+
+## Àmbits de Desenvolupament
+- **Europeu**: Basat en directives comunitàries.
+- **Estatal i Autonòmic**: Implementació i adaptació a nivell estatal i autonòmic.
+
+## Punt Clau
+- **Prevenció del mal ús tecnològic**: La llei busca prevenir el mal ús de la tecnologia en àmbits com el comerç electrònic, assegurant que les transaccions siguin segures i fiables.
+
+# Concepte de Serveis de la Societat d'Informació
+
+Els serveis de la societat d'informació són diversos i inclouen una àmplia varietat d'activitats realitzades electrònicament. Aquí es presenten els diferents àmbits que comprèn:
+
+## 1. **Contractació de Béns i Serveis per Via Electrònica**
+   - Compra i venda de productes o serveis a través d'internet.
+
+## 2. **Subministrament d’Informació per Via Electrònica**
+   - Exemple: Diaris digitals i altres formes de contingut informatiu en línia.
+
+## 3. **Activitats d'Intermediació**
+   - Inclou diverses activitats com:
+     - Provisió d’accés a la xarxa.
+     - Transmissió de dades.
+     - Realització de la còpia temporal de les pàgines d’Internet sol·licitades pels usuaris.
+
+## 4. **Allotjament de Dades**
+   - Hospedatge de dades en servidors d’informació.
+
+## 5. **Serveis o Aplicacions Facilitats per Altres**
+   - Inclou eines, serveis o aplicacions proporcionades per tercers.
+
+## 6. **Provisió d’Instruments de Recerca**
+   - Serveis que permeten la búsqueda de informació a internet.
+
+## 7. **Enllaços a Altres Llocs d’Internet**
+   - Proporcionar links o referències a altres pàgines web.
+
+## 8. **Serveis a Petició Individual dels Usuaris**
+   - Com ara la descàrrega d’arxius de vídeo o àudio.
+   - Requisit: Ha de representar una activitat econòmica per al prestador.
+
+Cada un d'aquests punts representa un aspecte diferent dels serveis que es poden oferir en el marc de la societat d'informació, sempre que es realitzin per via electrònica i tinguin un component econòmic.
+
+# Obligacions i Responsabilitat dels Prestadors de Serveis (LSSICE)
+
+## **Objectiu**
+- Establir un marc de confiança i perseguir activitats il·lícites desenvolupades a la xarxa, dins d'un marc jurídic extrapenal.
+
+## **Sancions i Activitats Il·lícites**
+- Les sancions estan limitades a no incloure penes privatives de llibertat.
+- Exemple: L'enviament de correu brossa està sancionat per la LSSICE però no és un delicte penal.
+
+## **Deure de Col·laboració**
+- Els prestadors de serveis han de col·laborar per impedir la continuïtat de la divulgació de continguts o serveis il·lícits.
+- Han de retenir dades de trànsit relatives a les comunicacions electròniques fins a un màxim de 12 mesos.
+
+## **Tractament de Dades**
+- Les IP es consideren dades personals. Això implica que:
+   - Els responsables de les pàgines web han de registrar el fitxer a l’Agència Espanyola de Protecció de Dades.
+- Les empreses poden retenir dades necessàries per identificar l'origen de l'accio il·lícita i el moment de la prestació del servei.
+   - No es pot atemptar contra el secret de les comunicacions.
+
+## **Exemples de Implementació**
+- En cas de descobriment de continguts il·lícits com pornografia infantil, els prestadors han de col·laborar en la seva eliminació.
+- Han de retenir registres relacionats amb aquestes activitats il·lícites fins a un màxim de 12 mesos.
+
+# Règim de Responsabilitats dels Prestadors de Serveis (LSSICE)
+
+## **Tipus de Responsabilitat**
+- **Civil, Penal i Administrativa**: Depenent de la seva participació i coneixement dels continguts il·lícits.
+
+## **Determinació de Responsabilitat**
+1. **Autor o Controlador de la Informació**:
+   - Si el prestador crea o controla la informació, la seva responsabilitat és clara i inqüestionable.
+   
+2. **Participació No Activa**:
+   - Si el prestador no té una participació activa, la responsabilitat varia segons diferents escenaris:
+     - **Transmissió de Dades o Provisió d'Accés**: Exempt de responsabilitat si no modifica ni selecciona dades ni destinataris.
+     - **Hostatge**: Exempt si no té coneixement efectiu de la il·legalitat o potencial dany a tercers.
+     - **Enllaços i Instruments de Recerca**: Exempt si compleix les condicions mencionades per a l'hostatge.
+
+## **Exempcions de Responsabilitat**
+- **Desconeixement dels Continguts Il·lícits**: Si no tenen coneixement efectiu de la il·legalitat.
+- **Retirada Ràpida de Continguts**: Si actuen ràpidament per retirar continguts il·lícits o impedir-ne l'accés un cop n'han tingut coneixement.
+
+## **Deure de Supervisió**
+- No estan obligats a supervisar proactivament ni a buscar activament continguts il·lícits.
+- Poden permetre als usuaris valorar i marcar continguts inapropiats o il·lícits.
+
+# Obligacions de les Empreses de Comerç Electrònic (LSSICE)
+
+## **Informació Bàsica a Mostrar**
+- **Denominació Social, NIF, Domicili, i Contacte**: Dades essencials com denominació social, NIF, adreça física, correu electrònic o fax.
+- **Codis de Conducta**: Referències als codis de conducta als quals l'empresa està adherida.
+- **Detalls de Productes i Serveis**: Inclou preus, impostos i despeses d'enviament.
+- **Dades Professionals**: Informació sobre autoritzacions, col·legiacions i títols acadèmics si és aplicable.
+
+## **Contractació en Línia**
+- **Procés de Contractació**: Especificar els tràmits per a la contractació en línia.
+- **Accés i Arxivat del Contracte**: Informació sobre si el contracte serà accessible i arxivat.
+- **Correcció d'Errors**: Mitjans tècnics disponibles per identificar i corregir errors.
+- **Idioma del Contracte**: Llengües disponibles per formalitzar el contracte.
+- **Condicions Generals**: Detalls sobre les condicions generals del contracte.
+- **Confirmació de la Comanda**: L'usuari ha de rebre un acusament de rebut de la comanda.
+
+## **Titulars de Pàgines Personals**
+- **No Subjectes a la Llei**: Si no generen ingressos, no estan subjectes a les obligacions de la LSSICE.
+- **Si Generen Ingressos**: Han de proporcionar informació bàsica i complir amb les normes de publicitat.
+  - **Identificació de l'Anunciant**: L'anunciant s'ha de identificar clarament.
+  - **Claritat Publicitària**: El caràcter publicitari de la informació ha de ser inequívoc.
+
+# Regulació de Comunicacions Publicitàries (Spam) en LSSICE i LOPDP
+
+## **Definició de Correu Brossa (Spam)**
+- **Descripció**: Enviaments massius de missatges no consentits amb finalitats comercials.
+- **Absència en el Codi Penal**: No es considera un delicte penal, però sí pot ser sancionat extrapenalment.
+
+## **Legalitat i Consentiment**
+- **LOPDP (Llei de Protecció de Dades)**: Necessita el consentiment de la persona per al tractament de dades amb finalitats publicitàries.
+- **LSSICE (Llei de Serveis de la Societat de la Informació i de Comerç Electrònic)**: Prohibeix el spam tret que hi hagi consentiment expressa del destinatari.
+
+## **Sancions**
+- **Infracció Greu**: Multa de 30.001€ a 150.000€.
+- **Infracció Lleu**: Multa fins a 30.000€.
+- **Absència de Responsabilitat Penal**: No és una conducta que generi responsabilitat penal.
+
+# Legislació sobre Signatura Electrònica
+
+## **Conceptes Clau**
+- **Signatura Digital**: Basada en mètodes criptogràfics, una definició tècnica que assegura autenticitat, integritat i no-repudiació.
+- **Signatura Electrònica**: De natura legal, té un abast més ampli i no necessàriament es basa en criptografia.
+
+## **Tipus de Signatura Electrònica (Llei 59/2003)**
+1. **Signatura Electrònica Avançada**: 
+   - Permet identificar la persona que signa.
+   - Detecta modificacions en les dades signades.
+2. **Signatura Electrònica Reconeguda**:
+   - Basada en un certificat reconegut.
+   - Generada mitjançant un dispositiu segur.
+   - Equiparada a la signatura manuscrita.
+
+## **Prestadors de Serveis de Certificació**
+- Expedeixen certificats electrònics que relacionen les eines de signatura digital amb la identitat personal del usuari.
+- Operen d’acord amb la Llei de Protecció de Dades.
+
+## **DNI Electrònic (DNIe)**
+- Permet acreditar la identitat física i telemàtica.
+- Habilitat per a realitzar transaccions telemàtiques gràcies a claus criptogràfiques emmagatzemades.
+
+## **Legislació i Regulació**
+- La gestió de dades personals per part dels prestadors de serveis ha de complir amb la Llei Orgànica de Protecció de Dades (LOPD).
+- Els prestadors han de lliurar la identitat dels signants quan així ho requereixin els òrgans judicials.
+
+# El Correu Electrònic
+
+El correu electrònic és una eina de comunicació essencial, però és important tenir en compte les qüestions de protecció de dades personals associades a aquesta tecnologia.
+
+## Normativa Aplicable
+- **Constitució (art. 18):** Estableix garanties per a l'honor, la intimitat i el secret de les comunicacions.
+- **Codi Penal (art. 197.1):** Protegeix la intimitat de les persones i considera un delicte l'obtenció de correus electrònics sense el consentiment de l'altra part.
+- **Estatut dels Treballadors (art. 20.3):** Permet a l'empresari prendre mesures de vigilància i control per verificar el compliment de les obligacions dels treballadors.
+
+## Manteniment de la Privadesa
+- En els servidors de correu, s'ha de mantenir la Llei Orgànica de Protecció de Dades Personals (LOPDP).
+- En els clients de correu, s'ha de garantir la privadesa de les comunicacions.
+
+## Privacitat i Control
+- Fins que els treballadors notifiquin o acceptin els controls i les sancions relatives al correu electrònic, aquest es considera equivalent al correu paper, és a dir, privat i no subjecte a control.
+
+És fonamental respectar les lleis i les normatives vigents per garantir la privadesa i la protecció de dades personals en l'ús del correu electrònic.
+
+# Correu Electrònic i Intimitat
+
+El correu electrònic és una forma de comunicació crítica, i protegir la seva intimitat és essencial per a la seguretat en línia.
+
+## Riscos a Evitar
+- **Observació de Missatges:** Eviteu que altres puguin veure els vostres missatges enviats o rebuts.
+- **Suplantació d'Identitat:** Preveniu que algú obtingui les vostres contrasenyes i s'identifiqui com vosaltres per enviar correus en el vostre nom.
+
+## Mesures Bàsiques de Seguretat
+Algunes pautes fonamentals per evitar aquests problemes inclouen:
+
+- **Utilitzar l'Última Versió del Programari:** Mantingueu actualitzat el vostre programa de correu electrònic per corregir vulnerabilitats conegudes.
+- **Esborrar Informació Compromesa:** Elimineu qualsevol dada o missatge sensible de manera segura.
+- **Utilitzar Diferents Comptes de Correu:** No utilitzeu un únic compte per a totes les comunicacions; tenir comptes separats pot augmentar la seguretat.
+- **Xifrar i Signar Correus Confidencials:** Utilitzeu xifrat i signatura digital per protegir la confidencialitat i autenticitat dels missatges.
+- **No Revelar Dades Personals Innecessàriament:** Eviteu compartir informació personal a menos que sigui absolutament necessari.
+
+Mantenir la seguretat i la privadesa en el correu electrònic és essencial per protegir les vostres comunicacions i les vostres dades personals.
+
+# Correu Segur
+
+Per garantir la màxima privadesa i seguretat en l'enviament i la recepció de correu electrònic, és essencial prendre les següents mesures:
+
+## Propietats d'un Correu Segur
+Un correu electrònic es considera segur si compleix les següents propietats:
+- **Xifratge:** Protegeix el contingut del missatge perquè només el destinatari pugui llegir-lo.
+- **Integritat:** Garanteix que el missatge no ha estat modificat durant la transmissió.
+- **Identitat del Remitent:** Assegura que el remitent és qui diu ser.
+- **No-Repudiació:** Impedeix que el remitent negui l'enviament del correu.
+
+## Elements Addicionals
+Per aconseguir aquestes propietats, cal instal·lar elements addicionals en el client de correu electrònic.
+
+## La Signatura Digital
+La signatura digital permet al destinatari verificar que el missatge no ha estat modificat i que el contingut és el mateix que el remitent va redactar. Cada usuari té un parell de claus, la clau pública i la clau privada. La clau pública es dóna a les persones que volem que rebin els nostres correus i permet verificar la signatura. La clau privada és secreta i s'utilitza per signar els correus i desxifrar els missatges xifrats destinats a nosaltres.
+
+## Xifratge
+El xifratge oculta el contingut del missatge de manera que només el destinatari final pugui llegir-lo. És fonamental per garantir la privadesa de les comunicacions.
+
+## Funció de Resum (Hash)
+Les funcions de resum (hash) s'utilitzen per generar una empremta digital (DNI) per a cada fitxer. Això facilita la no-repudiació i l'autenticació, ja que només el propietari de la clau privada pot signar un document i altres poden verificar la seva autenticitat i integritat.
+
+En resum, el correu segur implica l'ús de signatura digital i xifratge per protegir la privadesa, garantir la integritat dels missatges i verificar la identitat del remitent.
 
